@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneha Portfolio</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+      scroll-behavior: smooth;
+      font-family: 'poppins';
+    }
+    :root{
+      --background: rgb(24,24,24);
+     
+    }
+    body{
+      min-height: 100vh;
+      background-color:rgb(24,24,24);
+    }
+    nav{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 2em 15%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(15,15,15,0.8);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+    ul{
+      display: flex;
+      align-items: center;
+      gap: 3em;
+    }
+    nav ul a{
+      color: white;
+      opacity: 0.7;
+      transition: 0.2s ease-in-out;
+    }
+    nav ul a:hover{
+      opacity: 1;
+    }
+    .logo{
+      font-size: 4em;
+      color: white;
+      font-weight: 800;
+      opacity: 0.8;
+      transition: 0.2s ease-in-out;
+    }
+    .logo:hover{
+      opacity: 1;
+
+    }
+    .btn{
+      padding: 0.5em 1em;
+      color: white;
+      font-weight: 500;
+      letter-spacing:1px ;
+      border-radius: 0.5em;
+      font-size: 1.1em;
+      border: 2px solid white;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+    }
+    .btn:hover{
+      background-color: white;
+      color: rgb(24,24,24);
+    }
+    span{
+      background: linear-gradient(to right,#6cff52,#3ec5ff);
+      background-clip: text;
+      color: transparent;
+    }
+    #menu{
+      color: white;
+      font: 3em;
+      display: none;
+    }
+    section{
+      min-height: 100vh;
+      padding: 5% 15%;
+    }
+    #home{
+      display: flex;
+      flex-direction: column;
+      align-items:center ;
+      justify-content: center;
+      gap: 2em;
+      color: white;
+     
+
+    }
+    #home img{
+      height: 20vw;
+      width: 18vw;
+      border-radius: 50%;
+      margin-top: 3em;
+    }
+    .info-box{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap:0.5 ;
+      max-width: 600px;
+    }
+    .info-box h1{
+      font-size: 5em;
+      font-weight: 500;
+    }
+.info-box h3{
+  font-size: 2em;
+  font-weight: 400;
+}
+.btn-box{
+  display: flex;
+  gap: 1em;
+}
+.info-box p{
+  opacity: 0.7;
+}
+
+
+.btn-box .btn:nth-of-type(2){
+  background-color: white;
+  color:rgb(24,24,24) ;
+}
+.btn-box .btn:nth-of-type(2):hover{
+  background-color: rgb(24,24,24);
+  color: white;
+}
+::-webkit-scrollbar{
+  width: 20px;
+  background-color: rgb(24,24,24);
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(to bottom,#6cff52,#3ec5ff);
+}
+#about{
+  background-color: rgb(21,21,21);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+}
+#about img{
+  height: 40vw;
+  width:30vw ;
+  border-radius: 1em;
+  
+}
+.about-box{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 2em;
+}
+.about-box h1{
+  font-size: 5em;
+}
+.about-box p{
+ color: white;
+ opacity: 0.8;
+}
+.skills{
+  display: flex;
+  text-align: left;
+  gap: 10em;
+}
+.skills ul{
+  font-size: 1.3em;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  opacity: 0.8;
+  align-items: baseline;
+}
+.skills ul li span{
+  display: flex;
+  gap: 0.5em;
+  font-size: 1.2em;
+  transition: 0.3s ease-in-out;
+}
+.skills ul li span:hover{
+    transform: translateX(10px);
+}
+.skills ul li i{
+  font-size: 1.2em;
+}
+.about-box h2{
+  font-size: 2.5em;
+}
+
+
+
+
+
+
+    
+  </style>
+</head>
+<body>
+    <nav>
+      <a href="#" class="logo"><span>Sneha S</span></a>
+         <ul class="links">
+          <a href="#home">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#resume">Education</a>
+          <a href="#project">Project</a>
+          <a href="#contact">Contact</a>
+        </ul>
+        <i class=" bx-menu" id="menu">☰</i>
+        <a href="#contact" class="btn">Contact Me</a>
+    </nav>
+    <section id="home">
+      <img src="/demo.js/sneha pic.jpg"  alt="">
+      <div class="info-box">
+        <h1><span>Hello,I'm Sneha</span></h1>
+        <h3><span>Frontend Developer</span></h3>
+        <p>Frontend Developer specializing in responsive web design and interactive UI development. Proficient in HTML, CSS, JavaScript, and React with a strong focus on clean code, user experience, and mobile-first designs.</p>
+      
+        
+      </div>
+      <div class="btn-box">
+        <div class="btn">Hire</div>
+        <div class="btn">Contact Me</div>
+      </div>
+
+    </section>
+    <section id="about">
+      <div class="about-box">
+        <div class="about-info">
+          <h1><span>About Me</span></h1>
+          <p>I'm Sneha, a passionate Front-End Developer who loves turning ideas into interactive and visually appealing websites. With strong skills in HTML, CSS, and JavaScript, I build responsive web applications that provide smooth user experiences. I enjoy working on clean, efficient code and creating pixel-perfect designs. I'm always eager to learn new technologies and grow as a developer, aiming to deliver projects that are both functional and beautiful across all devices.</p><br>
+          <p>I am excited to embark on my professional journey as a Full Stack Developer.I am a proactive learner and problem-solver, always ready to take on new challenges and continuously improve my skills. I am eager to bring my enthusiasm, technical skills, and problem-solving abilities to a dynamic team where I can contribute to impactful projects and continue to grow as a developer.
+Feel free to check outmy projects on</p>       
+        </div>
+        <h2><span>Skills</span></h2>
+        <div class="skills">
+            <ul >
+              <li>
+                <span>HTML</span>
+            </li>
+              <li>
+                <span>CSS</span>
+              </li>
+              <li>
+                <span>JavaScript</span>
+              </li>
+              <li>
+                <span>React</span>
+              </li>
+              
+              </ul>
+              
+        </div>
+      </div>
+    
+    </section>
+</body>
+</html>

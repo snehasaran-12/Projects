@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="hii" >hi</h1>
+<h1 class="hlo">oi</h1>
+
+    <script>
+       let que= document.createElement("h1");
+        que.forEach((ele,index)=>{
+           ele.innerText="heloo"
+        })
+
+        let sub=document.querySelectorAll("h1")[1]
+        sub.forEach((ele,index) =>{
+            ele.innerText="design"
+        })
+let head= document. querySelector(".hii")
+head.innerText= "change heading"
+
+    </script>
+    <div id="main">
+        <p class="note">this is a note</p>
+    </div>
+    <script>
+        let note = document. querySelector('.note')
+        console.log(note.parentNode)
+    </script>
+    <ul id="menu">
+        <li class="first">home</li>
+        <li >products</li>
+<li class="current">customer support</li>
+<li>career</li>
+<li>investors</li>
+<li>news</li>
+<li class="last">aboout us</li>
+    </ul>
+    <h1 id="heading">hello </h1>
+    <button onclick="removeHeading()">remove heading</button>
+    <script>
+        function removeHeading() {
+            let heading = document.getElementById("heading")
+            heading.remove()
+        }
+    </script>
+    <div id ="container">
+        <p id="para">this is a paragraph</p>
+        <button onclick="removePara()">remove paragraph</button>
+    </div>
+    <script>
+         function removePara() {
+      let para = document.getElementById("para");
+      let container = document.getElementById("container");
+      container.removeChild(para); 
+    }
+    </script>
+    <div id="box"> </div>
+        <button onclick="addElements()">addElements</button>
+          
+    <script>
+         
+        function addElements(){
+            let newElement=document. createElement("para")
+            newElement.innerText = "this is the new paragraph"
+            document.getElementById("box").appendChild(newElement)
+        }
+    </script>
+</body>
+</html>

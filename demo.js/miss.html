@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Missing Numbers</h2>
+    <p>Given Digits: <strong>[1,2,4,6,8,9]</strong></p>
+    <button onclick="findmissing()">Find Numbers</button>
+    <h3 id="output"></h3>
+
+
+    <script>
+       function findmissing(){
+
+        let given =[1,2,4,6,8,9]
+
+        let missings=""
+        for(let i=0; i<=9;i++)
+       {
+        let found =false;
+       }
+
+       for (let j =0;j< given.length; j++){
+       if(i===given [j]){
+       found =true;
+       break;
+       } 
+    }
+       if(!found){
+        missings +=i+ ""
+       }
+        document.getElementById("output").innerText="Missing Digits"+missings;
+
+       }
+        
+    </script>
+</body>
+</html>

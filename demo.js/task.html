@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .ans{
+      display: none;
+    }
+    .ques{
+      cursor: pointer;
+    }
+    .ans{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h2 class="ques">what is html?</h2>
+  <p class="ans">hypertext markup lang</p>
+  <h2 class="ques">what is css?</h2>
+  <p class="ans">cascading style sheet</p>
+
+<script>
+   
+   let ques=document.getElementsByClassName("ques");
+   let ans=document.getElementsByClassName("ans");
+for(let idx=0;idx<ques.length;idx++)
+{
+   ques[idx].addEventListener("click",function()
+    {
+      if(ans[idx].style.display=="none"||ans[idx].style.display=="")
+    {
+         ans[idx].style.display="block"
+    }
+    else{
+          ans[idx].style.display="none"
+    }
+    }
+   )
+}
+
+</script>
+
+</body>
+</html>
